@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552028099770",
+    "project_id": "perfumeapp-3aaa0",
+    "storage_bucket": "perfumeapp-3aaa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552028099770:android:dc6e618cab12a1a1999e83",
+        "android_client_info": {
+          "package_name": "com.example.perfumeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNx17Didz8-gdnxeKG0SkLev6Q_wntSzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

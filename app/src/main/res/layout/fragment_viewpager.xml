@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/slider"
+
+        />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scent of the\n   Season"
+        android:textColor="@color/black"
+       android:fontFamily="@font/lovers_quarrel"
+        android:textSize="030dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="150dp"/>
+
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/SlideItem_image"
+        android:layout_width="300dp"
+        android:background="@drawable/searchshape"
+        android:src="@drawable/mainpic"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:layout_height="130dp"/>
+
+</RelativeLayout>

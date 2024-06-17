@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Cart">
+
+   <TextView
+       android:id="@+id/mycart"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="My Cart"
+       android:textSize="30sp"
+       android:textColor="@color/white"
+       android:fontFamily="@font/lusitana"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="60dp"/>
+     <ImageView
+         android:id="@+id/cartbackbtn"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/back"
+         android:layout_marginTop="50dp"
+         android:layout_marginStart="10dp"/>
+    <ScrollView
+        android:layout_below="@+id/mycart"
+        android:id="@+id/Scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartrecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mycart"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20dp"/>
+    </ScrollView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Scroll"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lusitana"
+        android:paddingVertical="3dp"
+        android:text="SubTotal"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Scroll"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lusitana"
+        android:paddingVertical="3dp"
+        android:text="$699.00"
+
+        android:textColor="#43A047"
+        android:textSize="16sp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtotal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/lusitana"
+        android:text="Shipping"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtotal"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/lusitana"
+        android:paddingVertical="3dp"
+        android:text="$45.00"
+        android:textColor="#43A047"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shipping"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/lusitana"
+        android:text="--------------------------------------------"
+
+
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dash"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/lusitana"
+        android:text="Total"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dash"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/lusitana"
+        android:text="$744.00"
+        android:textColor="#43A047"
+        android:textSize="16sp" />
+
+ <TextView
+     android:id="@+id/cartemptymessage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mycart"
+     android:layout_marginStart="70dp"
+     android:layout_marginTop="100dp"
+     android:fontFamily="@font/lusitana"
+     android:text="Your cart is Empty\n add Some items"
+     android:textColor="@color/white"
+     android:textSize="32sp" />
+
+
+    <Button
+        android:id="@+id/checkoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/total"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#F543A1CD"
+        android:fontFamily="@font/lusitana"
+        android:text="Check out"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+
+
+
+</RelativeLayout>

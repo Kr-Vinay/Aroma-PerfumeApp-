@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:paddingRight="8dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        >
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/cardimage"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mainpic"/>
+
+        <TextView
+            android:id="@+id/cardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="119dp"
+            android:text="hello"
+            android:fontFamily="@font/lusitana"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:textSize="15sp"
+            android:layout_marginTop="135dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#00ED0A"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
